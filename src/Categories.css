@@ -1,0 +1,41 @@
+.categories-container {
+    width: 100%;
+    background-color: #f8f9fa; /* Light background color for the categories bar */
+    padding: 10px 20px;
+    box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
+}
+
+.categories {
+    display: flex;
+    justify-content: space-between; /* Distribute space between items */
+    width: 100%; /* Take full width of the container */
+}
+
+.category-item {
+    text-decoration: none;
+    color: #2874f0; /* Flipkart's brand color */
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px; /* Rounded corners for the links */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    flex-grow: 1; /* Allow links to grow and take available space */
+    text-align: center; /* Center the text inside the link */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the items vertically */
+}
+
+.category-item img {
+    max-width: 50px; /* Adjust size as needed */
+    margin-bottom: 5px; /* Space between image and text */
+}
+
+.category-item:hover {
+    background-color: #2874f0; /* Flipkart's brand color on hover */
+    color: white; /* White text color on hover */
+}
+
+.category-item:hover img {
+    filter: brightness(0) invert(1); /* Change image color on hover for contrast */
+}
+
